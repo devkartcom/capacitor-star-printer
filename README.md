@@ -1,4 +1,4 @@
-# @aybinv7/capacitor-star-printer
+# @devkartcom/capacitor-star-printer
 
 Minimal Capacitor plugin for **Star Micronics** receipt printers via the official
 **StarXpand SDK (StarIO10)**. Provides the transports the generic BLE/ESC-POS
@@ -20,7 +20,7 @@ Two print paths:
 ## API
 
 ```ts
-import { StarPrinter } from '@aybinv7/capacitor-star-printer';
+import { StarPrinter } from '@devkartcom/capacitor-star-printer';
 
 await StarPrinter.addListener('printerFound', (p) => console.log(p.identifier, p.model, p.interface));
 await StarPrinter.discover({ timeoutMs: 10000 });                    // Bluetooth (default)
@@ -73,8 +73,25 @@ Events: `printerFound`, `discoveryFinished`, `connected`, `disconnected`, `commu
 ## Install
 
 ```sh
-npm i github:devsaranweb/capacitor-star-printer#v0.3.0
+npm i github:devkartcom/capacitor-star-printer#v0.4.1
 npx cap sync
 ```
 
 `dist/` is committed — installing from git needs no build step.
+
+## About Devkart
+
+Built and maintained by [Devkart Technologies LLP](https://devkart.com): custom software,
+SaaS platforms and MVPs. We run this plugin in production in our own two products:
+
+- **[Supaorder](https://www.supaorder.com)**: white-label online ordering for restaurants.
+  Orders go straight into Clover, Square or Toast, and restaurants pay a flat monthly fee
+  instead of a commission.
+- **[SuperApp](https://www.superapphq.com)**: a white-label multi-vertical marketplace
+  platform for food delivery, retail and supermarkets.
+
+Questions or issues: open a GitHub issue, or write to contact@devkart.com.
+
+## License
+
+MIT © Devkart Technologies LLP

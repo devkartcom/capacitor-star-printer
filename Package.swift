@@ -2,10 +2,10 @@
 import PackageDescription
 
 let package = Package(
-    name: "Aybinv7CapacitorStarPrinter",
+    name: "DevkartcomCapacitorStarPrinter",
     platforms: [.iOS(.v15)],
     products: [
-        .library(name: "Aybinv7CapacitorStarPrinter", targets: ["Aybinv7CapacitorStarPrinter"])
+        .library(name: "DevkartcomCapacitorStarPrinter", targets: ["DevkartcomCapacitorStarPrinter"])
     ],
     dependencies: [
         .package(
@@ -19,7 +19,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "Aybinv7CapacitorStarPrinter",
+            name: "DevkartcomCapacitorStarPrinter",
             dependencies: [
                 .product(name: "Capacitor", package: "capacitor-swift-pm"),
                 .product(name: "Cordova", package: "capacitor-swift-pm"),
